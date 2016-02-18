@@ -1,0 +1,13 @@
+<li ng-if="main.isNewItemForm">
+  <form ng-submit="main.submitNewItem()">
+    <div class="form-group">
+      <label><div ng-show="main.name">Product Name</div></label>
+      <input type="text" class="form-control" placeholder="Product Name" ng-model="main.name">
+    </div>
+    <div class="form-group">
+      <label><div ng-show="main.exp">Expiration Date</div></label>
+      <input type="text" class="form-control" placeholder="Expiration Date" ng-model="main.exp" >
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</li>  
